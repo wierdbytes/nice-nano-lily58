@@ -7,11 +7,11 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      # pinned to the ZMK main commit used by the 2025-12-13 build
-      revision: fed2cf69da6de3f6a9a60bdef671da2abd648cdd
+      # pinned ZMK main commit (2026-11-14, Zephyr 4.1); keep in sync with .github/workflows/build.yml
+      revision: 4de313367288aad5aeaa1243890e40dc813f7008
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
-      revision: 68e63aad6fb39c01c1d8b945156d6dd69fa480ef
+      revision: 7bcba18fc8df27303eb92a435d33ea870cc51f98
   self:
     path: config
