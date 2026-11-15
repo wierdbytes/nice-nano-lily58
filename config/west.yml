@@ -7,10 +7,11 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # pinned to the ZMK main commit used by the 2025-12-13 build
+      revision: fed2cf69da6de3f6a9a60bdef671da2abd648cdd
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
-      revision: main
+      revision: 68e63aad6fb39c01c1d8b945156d6dd69fa480ef
   self:
     path: config
